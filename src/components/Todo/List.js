@@ -1,17 +1,15 @@
-import React from 'react';
-import TodoItem from './Item';
+import React, { useEffect } from 'react';
+import TodoItem from '../../containers/TodoItem';
 
-const TodoList = ({ todos, editTodo, deleteTodo }) => {
+const TodoList = ({ todos, fetchTodos }) => {
+  useEffect(() => {
+    fetchTodos();
+  }, []);
   return (
     <div>
-      <ul class="todo-l">
+      <ul className="todo-l">
         {todos.map((todo) => (
-          <TodoItem
-            key={todo.id}
-            todo={todo}
-            editTodo={editTodo}
-            deleteTodo={deleteTodo}
-          />
+          <TodoItem key={todo.id} todo={todo} />
         ))}
       </ul>
     </div>

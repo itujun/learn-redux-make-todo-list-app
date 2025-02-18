@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "json-server --watch db.json --port 3001 -H 127.0.0.1",
+    "server": "json-server --watch db.json --port 3001 --host 127.0.0.1",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TodoHeader = ({ addTodo }) => {
+const TodoHeader = ({ createTodo }) => {
   const [todo, setTodo] = useState('');
 
   const handleChange = (e) => {
@@ -9,7 +9,7 @@ const TodoHeader = ({ addTodo }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(todo);
+    createTodo(todo);
     setTodo('');
   };
   return (

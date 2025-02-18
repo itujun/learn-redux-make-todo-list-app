@@ -1,18 +1,33 @@
 {
   "todos": [
     {
-      "id": 1,
+      "id": "1",
       "text": "Learn React",
       "completed": true
     },
     {
-      "id": 2,
+      "id": "2",
       "text": "Learn Next.js",
       "completed": false
     },
     {
-      "id": 3,
+      "id": "3",
       "text": "Make Projects",
+      "completed": false
+    },
+    {
+      "id": "ac3b",
+      "text": "Sholat subuh",
+      "completed": true
+    },
+    {
+      "id": "9e60",
+      "text": "Jogging pagi",
+      "completed": true
+    },
+    {
+      "id": "e32d",
+      "text": "Sarapan",
       "completed": false
     }
   ]

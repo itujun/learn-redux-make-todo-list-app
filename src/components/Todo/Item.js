@@ -8,7 +8,7 @@ const TodoItem = ({ todo, editTodo, deleteTodo }) => {
         {todo.text}
       </div>
       <div
-        class="todo-delete"
+        className="todo-delete"
         style={{ color: 'red', cursor: 'pointer' }}
         onClick={() => deleteTodo(todo.id)}
       >
